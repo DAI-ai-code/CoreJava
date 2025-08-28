@@ -27,7 +27,7 @@ public class AccountSetup {
 		Scanner sc = new Scanner(System.in);
 		String accNum2 = "S2";
 		System.out.println("Enter account number from which you want to withdraw: " + accNum2);
-		String accNum1 = "C24";
+		String accNum1 = "C2";
 		System.out.println("Enter account number into which you want to deposit: "+ accNum1);
 		
 		Account a1 = findAccount(list,accNum1);

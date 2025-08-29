@@ -10,8 +10,8 @@ public class AccountSetup {
 		Account a1 = new Account("a1", "a", 10000);
 
 		try {
-			a1.deposit(10000000);
-			a1.deposit(111);
+			a1.deposit(1000);
+			a1.deposit(11100);
 			a1.withdraw(20.00);
 			a1.withdraw(20.00);
 			a1.withdraw(20.00);

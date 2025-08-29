@@ -45,8 +45,7 @@ public class CheckEqual {
 
 		System.out.println("Are the two strings equal? Ans: " + equalIgnoreCase(s1, s2));
 		
-		
-
+	
 	}
 
 }

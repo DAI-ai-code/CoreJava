@@ -23,7 +23,6 @@ public class CheckEqual {
 		}
 		return true;
 	}
-
 	
 	public static boolean equal(String s1, String s2) {
 		

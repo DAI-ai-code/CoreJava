@@ -3,7 +3,6 @@ package Assignment5;
 import java.util.Scanner;
 
 public class AccountSetup {
-
 	
 	public static void main(String args[]) {
 

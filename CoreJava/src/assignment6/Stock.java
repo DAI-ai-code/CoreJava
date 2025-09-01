@@ -89,9 +89,7 @@ public class Stock {
 		List<Toy> vehicleToys = new ArrayList<Toy>();
 		List<Toy> softToys = new ArrayList<Toy>();
 		List<Toy> puzzleToys = new ArrayList<Toy>();
-		map.put("Vehicle", vehicleToys);
-		map.put("Soft Toy", softToys);
-		map.put("Puzzle", puzzleToys);
+
 		
 		for(Toy t: toyMainList) {
 			switch (t.getCategory()) {

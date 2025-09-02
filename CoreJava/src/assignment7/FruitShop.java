@@ -42,7 +42,7 @@ public class FruitShop {
 		fruitStream.filter(s -> s.length() <= 6).sorted(new FruitNameComparator()).forEach(System.out::println);
 		System.out.println("--------------------------------------------------------------\n\n");
 		
-		System.out.println("---------------Ans 6: Sort length wise -----------------");	
+		System.out.println("---------------Ans 6: Sort length wise -----------------------");	
 		fruitStream = fruitList.stream();
 		List<String> lengthWiseFruits = fruitStream.sorted((s1,s2)-> s1.length()-s2.length()).collect(Collectors.toList());
 		System.out.println(lengthWiseFruits);

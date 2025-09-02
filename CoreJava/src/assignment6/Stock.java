@@ -17,12 +17,12 @@ public class Stock {
 //		String productId, double price,  String name, String category, int age, int year
 		
 		toysList.add(new Toy("TT", 200, "Car", "Vehicle", 8, 2024));
-		toysList.add(new Toy("LL", 1000, "Truck", "Vehicle", 12, 2025));
+		toysList.add(new Toy("LL", 1000, "Truck", "Vehicle", 10, 2025));
 		toysList.add(new Toy("MM", 500, "Bike", "Vehicle", 10, 2023));
 		toysList.add(new Toy("NN", 800, "Teddy Bear", "Soft Toy", 6, 2025));
-		toysList.add(new Toy("OO", 2000, "Labubu Doll", "Soft Toy", 7, 2024));
+		toysList.add(new Toy("OO", 2000, "Labubu Doll", "Soft Toy", 8, 2024));
 		toysList.add(new Toy("PP", 300, "Barbie Doll", "Soft Toy", 6, 2025));
-		toysList.add(new Toy("QQ", 5000, "LEGO", "Puzzle", 14, 2023));
+		toysList.add(new Toy("QQ", 5000, "LEGO", "Puzzle", 13, 2023));
 		toysList.add(new Toy("RR", 100, "Jigsaw", "Puzzle", 13, 2024));
 		toysList.add(new Toy("SS", 900, "Mechanix", "Puzzle", 13, 2025));
 		

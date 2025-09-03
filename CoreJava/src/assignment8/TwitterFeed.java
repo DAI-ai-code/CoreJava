@@ -61,6 +61,8 @@ public class TwitterFeed {
 		System.out.println("<----------------------TOP 5 TRENDING TWEETS---------------------------->\n");
 		stream = tweets.stream();
 		stream.sorted((t1, t2) -> t2.getViews() - t1.getViews()).limit(5).forEach(System.out::println);
+		
+//		display unique hashtags using flatmap
 	}
 
 }

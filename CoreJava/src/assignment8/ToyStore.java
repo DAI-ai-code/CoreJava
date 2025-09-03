@@ -45,6 +45,7 @@ public class ToyStore {
 		Map<String, List<Toy>> mappedList = new HashMap<String, List<Toy>>();
 		mappedList =  stream.collect(Collectors.groupingBy((t) -> t.getCategory()));
 		mappedList.forEach((k,v) -> System.out.println(k +" -> "+ v + " with count: " +  v.size()));
+//		use collectors.counting above 
 		
 		System.out.println("<~~~~~~~~~~~~~~~Most and least expensive~~~~~~~~~~~~>\n");
 		stream = toyList.stream();

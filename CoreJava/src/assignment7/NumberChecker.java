@@ -5,6 +5,8 @@ import java.util.function.Predicate;
 
 public class NumberChecker {
 	
+	public static int n1, n2;
+	
 	public static boolean isPrime(int n) {
 		
 		for(int i = 2; i<n; i++) {
@@ -42,9 +44,12 @@ public class NumberChecker {
 	}
 	
 	public static void main(String[] args) {
+		n1 = -5;
+		n2 = 5;
+		
 //		ANS 1
 		Predicate<Integer> checkPos = (n) -> n>0;
-		System.out.println(checkPos.test(-5));
+		System.out.println("Is the number " + n1 +" positive? Ans: " + checkPos.test(n1));
 		
 //		ANS 2
 //		Lambda
@@ -58,10 +63,10 @@ public class NumberChecker {
 				return true;
 		};
 		
-		System.out.println(isPrime.test(5));
+		System.out.println("Is the number " + n2 +" prime? (lambda expression) Ans: " + isPrime.test(5));
 		
 //		method reference
-		System.out.println(operationOnNumber(NumberChecker::isPrime, 5));
+		System.out.println("Is the number " + n2 +" positive? (method reference) Ans: " + operationOnNumber(NumberChecker::isPrime, 5));
 
 		
 //		Ans 3 - Part 1

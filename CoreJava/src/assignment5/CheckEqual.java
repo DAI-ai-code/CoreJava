@@ -43,7 +43,7 @@ public class CheckEqual {
 		System.out.println("Enter second String: ");
 		s2 = sc.next();
 
-//		System.out.println("Are the two strings equal? Ans: " + equalIgnoreCase(s1, s2));
+		System.out.println("Are the two strings equal (ignore case)? Ans: " + equalIgnoreCase(s1, s2));
 		System.out.println("Are the two strings equal? Ans: " + equal(s1, s2));
 		
 	}

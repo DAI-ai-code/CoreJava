@@ -15,7 +15,7 @@ public class OddEven {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				while(num.getN() < 61 ) {	
+				while(num.getN() < 11 ) {	
 					num.isEven();
 				}
 			}
@@ -30,7 +30,7 @@ public class OddEven {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			while(num.getN() < 61) {
+			while(num.getN() < 11) {
 				num.isOdd();
 			}
 			}

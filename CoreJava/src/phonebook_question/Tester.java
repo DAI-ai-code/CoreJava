@@ -21,6 +21,14 @@ public class Tester {
 		String n = s.nextLine();
 		int a = pb.searchContact(n);
 		System.out.println(a);
+		
+//		
+		System.out.print("Enter name: ");
+		name = s.nextLine();
+		pb.deleteContact(name);
+		pb.displayContact();
+		
+		
 
 	}
 

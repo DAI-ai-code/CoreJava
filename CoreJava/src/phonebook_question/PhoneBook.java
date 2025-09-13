@@ -53,7 +53,8 @@ public class PhoneBook {
 	public void deleteContact(String name) {
 		Optional<Contact> cont = contacts.stream().filter((c) -> c.getName().equalsIgnoreCase(name)).findFirst();
 		if(cont.isPresent()) {
-			contacts.removeIf(contacts::remove);
+//			contacts.removeIf(contacts::remove); not working, error
+			contacts.remove(cont.get());
 		}
 	}
 }

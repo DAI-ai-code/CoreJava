@@ -36,7 +36,12 @@ public class Library{
 	}
 	
 	public Book searchByTitle(String title){
-		return books.stream().filter( (b) -> b.getTitle().toLowerCase().equals(title.toLowerCase())).findFirst().orElse(null);
+		Optional<Book> c = 	books.stream().filter( (b) -> b.getTitle().toLowerCase().equals(title.toLowerCase())).findFirst();
+		if (c.isPresent()) {
+			return c.get();	
+		}
+		return null;
+//		book =  books.stream().filter( (b) -> b.getTitle().toLowerCase().equals(title.toLowerCase())).findFirst();
 	}
 	
 	public void borrowBook(int ISBN) throws BorrowedException{

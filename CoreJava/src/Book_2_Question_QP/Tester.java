@@ -56,25 +56,25 @@ public class Tester {
 //		To add a new book we have a function in this class to keep the main program clean! 
 //		It calls the utils i.e. Book Bazaar funciton
 		System.out.println("---------ANSWER 1-----------");
-//		userAddNewBook();
+		userAddNewBook();
 		
 //		Answer 2
 //		To modify a book price we have a function in this class to keep the main program clean! 
 //		It calls the modifyFunciton in the utils i.e. BookBazar file
 		System.out.println("---------ANSWER 2-----------");
-//		userModifyPrice();
+		userModifyPrice();
 		
 //		Answer 3
 //		Since this doesn't need a use input we call from utils directly
 		System.out.println("---------ANSWER 3-----------");
-//		store.removeUnsoldBooks();
+		store.removeUnsoldBooks();
 		
 //		Answer 4
 		System.out.println("---------ANSWER 4-----------");
-//		List<Book> books = store.lowStockBooks();
-//		for(Book b: books) {
-//			System.out.println(b.toString());
-//		}
+		List<Book> books = store.lowStockBooks();
+		for(Book b: books) {
+			System.out.println(b.toString());
+		}
 		
 //		Answer 5
 		store.addDiscount();

@@ -65,6 +65,9 @@ public class BookBazaar {
 	public void addDiscount() {
 		List<Book> discountedBooks =  books.stream().filter( b->  (b.getLastSellDate() != null && (ChronoUnit.MONTHS.between(b.getLastSellDate(), LocalDate.now())) > 6)).collect(Collectors.toList());
 		if(discountedBooks.size()>0) {
+			for (Book b: discountedBooks) {
+				b.setDiscount(25);
+			}
 			discountedBooks.stream().forEach(System.out::println);
 		}else {
 			System.out.println("NO BOOKS UNSOLD");
